@@ -8,13 +8,16 @@ namespace topic_3_assignment
         {
             // jonathan
             int number = 29;
-            double price = 2.99;
+            double price = 2.99, area;
             string yeah = "I am learning a bit about computer sience!";
             string name;
             int grad;
+            int radius;
             Console.Title = "My programe is better then Raines";
             Console.CursorVisible = false;
-            Console.BackgroundColor = ConsoleColor.Green;
+            Console.BackgroundColor = ConsoleColor.Blue;
+            Console.Clear();
+            Console.ForegroundColor = ConsoleColor.Green;
             Console.WriteLine();
             Console.WriteLine("this is room #" + number);
             Console.WriteLine("the price is " + price.ToString("c"));
@@ -25,6 +28,11 @@ namespace topic_3_assignment
             name = "jonathan gaboury";
             grad = 2027;
             Console.WriteLine("my name is " + name + " and ill graduate in " + grad);
+            Console.WriteLine();
+            radius = 8;
+            area = Math.PI * Math.Pow(radius, 2);
+            Console.WriteLine(Math.Round(area, 1));
+
             
 
         }
